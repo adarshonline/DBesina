@@ -1,0 +1,30 @@
+{
+  "name": "DBesina",
+  "description": "The welcome bot",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/adarshonline/DBesina/blob/master/tg_bot/__main__.py"
+    },
+    {
+      "url": "https://github.com/adarshonline/DBesina/blob/master/tg_bot/__init__.py"
+    },
+    {
+      "url": "https://github.com/adarshonline/DBesina/blob/master/tg_bot/sample_config.py"
+    }
+  ]
+}
